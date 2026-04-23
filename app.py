@@ -8,6 +8,8 @@ from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
 import tempfile, os
 from dotenv import load_dotenv
+import os
+os.environ["OPENAI_API_KEY"] = "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"
 
 load_dotenv()
 
