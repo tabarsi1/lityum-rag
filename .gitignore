@@ -1,0 +1,6 @@
+rag-env/
+chroma_db/
+chroma_db_multi/
+__pycache__/
+*.pyc
+.env
