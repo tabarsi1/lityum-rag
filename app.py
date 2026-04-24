@@ -11,8 +11,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-st.set_page_config(page_title="Lityum Engineering Assistant", layout="wide")
-st.title("Lityum Engineering")
+st.set_page_config(page_title="NevinDiri — Document Assistant", layout="wide")
+st.title("NevinDiri")
 st.caption("Manufacturing Document Assistant — powered by AI")
 st.divider()
 
@@ -57,7 +57,7 @@ with st.sidebar:
             retriever = vectorstore.as_retriever(search_kwargs={"k": 4})
 
             prompt = ChatPromptTemplate.from_template("""
-You are a manufacturing engineering assistant for Lityum Engineering.
+"You are a manufacturing engineering assistant for NevinDiri."
 Answer using only the context below. Be precise and concise.
 Always mention which document the answer comes from.
 If the answer is not in the context, say so clearly.
